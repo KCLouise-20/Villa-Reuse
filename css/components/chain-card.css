@@ -1,0 +1,53 @@
+.chain-card__hint { margin-top: 12px; font-size: 12px; color: var(--c-muted); }
+
+.chain-chip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+  padding: 16px;
+  background: var(--c-cream);
+  border-radius: var(--radius-sm);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.chain-chip:hover { 
+ transform: translateY(-2px); 
+ box-shadow: var(--shadow-hover); 
+}
+
+.qr {
+  display: block;
+  flex-shrink: 0;
+  width: 62px;
+  height: 62px;
+  background-color: #fff;
+}
+
+.chain-chip__title { font-size: 13px; font-weight: 700; color: var(--c-green-900); }
+.chain-chip__note { margin-top: 4px; font-size: 10px; color: var(--c-muted); }
+
+.chain-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 22px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--c-border);
+  text-align: center;
+}
+
+.chain-stats__item { padding: 0 8px; }
+.chain-stats__item + .chain-stats__item { border-left: 1px solid var(--c-border); }
+
+.chain-stats__value {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.chain-stats__label {
+  margin-top: 6px;
+  font-size: 9px;
+  color: var(--c-muted);
+  letter-spacing: 0.04em;
+}

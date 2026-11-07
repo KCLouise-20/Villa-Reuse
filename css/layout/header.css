@@ -1,0 +1,113 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: var(--header-h);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 76px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--c-border);
+}
+
+.header__brand { display: flex; align-items: center; gap: 10px; }
+
+.header__logo {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: var(--c-green-600);
+}
+
+.header__title {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.header__tagline {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: var(--c-muted);
+}
+
+.header__actions { display: flex; align-items: center; gap: 14px; }
+
+.coins {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #f6f0df;
+  border: 1px solid #eadfba;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+}
+
+.coins__icon {
+  display: grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid var(--c-gold);
+  color: var(--c-gold);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.coins__value {
+  padding-left: 8px;
+  border-left: 1px solid #e0d3a8;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.icon-btn {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: 50%;
+}
+
+.icon-btn__badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  min-width: 14px;
+  height: 14px;
+  display: grid;
+  place-items: center;
+  background: var(--c-green-600);
+  color: #fff;
+  font-size: 8px;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--c-green-100);
+  color: var(--c-green-900);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .header { padding: 0 16px; }
+  .coins__label { display: none; }
+}

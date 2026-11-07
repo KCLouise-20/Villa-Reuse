@@ -1,0 +1,26 @@
+.insight-banner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 26px;
+  padding: 22px 28px;
+  background: var(--c-green-900);
+  border-radius: var(--radius-md);
+  color: #fff;
+}
+
+.insight-banner__icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.insight-banner__title {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.insight-banner__text { margin-top: 8px; font-size: 12px; color: #cfe0d2; }

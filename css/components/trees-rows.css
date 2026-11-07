@@ -1,0 +1,7 @@
+.trees-row {
+  display: flex;
+  gap: 6px;
+  margin-top: 22px;
+  font-size: 14px;
+  line-height: 1;
+}

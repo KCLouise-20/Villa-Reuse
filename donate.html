@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donate an item · Villa-Reuse</title>
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)" />
+  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin />
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600&display=swap)" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="header__brand" href="index.html">
+      <span class="header__logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-14 14z"/><path d="M5 19l7-7"/></svg>
+      </span>
+      <span>
+        <span class="header__title">Villa-Reuse</span>
+        <span class="header__tagline">GIVE WELL. LIVE LIGHTER.</span>
+      </span>
+    </a>
+    <div class="header__actions">
+      <div class="coins" aria-label="ReUse Coins balance">
+        <span class="coins__icon">$</span>
+        <span class="coins__label">ReUse Coins</span>
+        <span class="coins__value" id="coin-balance">120</span>
+      </div>
+      <button class="icon-btn" aria-label="Notifications">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+        <span class="icon-btn__badge">3</span>
+      </button>
+      <div class="avatar" aria-label="Your profile">YO</div>
+    </div>
+  </header>
+
+  <div class="app">
+    <aside class="sidebar">
+      <nav class="sidebar__nav">
+        <a class="sidebar__link" href="index.html">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3 2 11h3v10h6v-6h2v6h6V11h3z"/></svg>
+          Home
+        </a>
+        <a class="sidebar__link" href="donate.html">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M10.5 3h3v7.5H21v3h-7.5V21h-3v-7.5H3v-3h7.5z"/></svg>
+          Donate
+        </a>
+        <a class="sidebar__link" href="impact.html">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+          Impact
+        </a>
+        <a class="sidebar__link" href="profile.html">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+          Profile
+        </a>
+      </nav>
+      <div class="sidebar-card">
+        <svg class="sidebar-card__icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#1f7a3f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-14 14z"/><path d="M5 19l7-7"/></svg>
+        <h3 class="sidebar-card__title">Small acts, shared impact.</h3>
+        <p class="sidebar-card__text">Every item passed on keeps value in our community.</p>
+      </div>
+    </aside>
+
+    <main class="content content--narrow">
+      <a class="back-link" href="index.html">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        Back
+      </a>
+
+      <p class="eyebrow">GIVE SOMETHING A SECOND LIFE</p>
+      <h1 class="page-title">Donate an item</h1>
+      <p class="page-subtitle">It takes less than two minutes to share with your community.</p>
+
+      <form id="donate-form" novalidate>
+        <section class="form-section">
+          <div class="form-section__head">
+            <span class="step-badge">1</span>
+            <div>
+              <h2 class="form-section__title">Add a photo</h2>
+              <p class="form-section__hint">A clear, well-lit photo helps your item find a home faster.</p>
+            </div>
+          </div>
+
+          <label class="upload-zone" id="upload-zone">
+            <input type="file" id="photo-input" accept="image/jpeg,image/png" hidden />
+            <svg class="upload-zone__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+            <span class="upload-zone__label" id="upload-label">Upload item photo</span>
+            <span class="upload-zone__hint">JPG or PNG, up to 10 MB</span>
+            <img class="upload-zone__preview" id="photo-preview" alt="" hidden />
+          </label>
+        </section>
+
+        <section class="form-section">
+          <div class="form-section__head">
+            <span class="step-badge">2</span>
+            <div>
+              <h2 class="form-section__title">Tell us about it</h2>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="item-name">Item name <span class="req">*</span></label>
+            <input class="field__input" id="item-name" name="itemName" type="text" placeholder="e.g. Ceramic mug, winter jacket" required />
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label class="field__label" for="category">Category <span class="req">*</span></label>
+              <select class="field__input field__select" id="category" name="category" required>
+                <option value="Clothes">Clothes</option>
+                <option value="Appliances">Appliances</option>
+                <option value="Books">Books</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div class="field field--conditions">
+                <span class="field__label" id="condition-label">Condition <span class="req">*</span></span>
+                 <div class="segmented" id="condition-group" role="radiogroup" aria-labelledby="condition-label"></div>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="field__label-row">
+              <label class="field__label" for="story">Donation story</label>
+              <span class="field__optional">Optional</span>
+            </div>
+            <textarea class="field__input field__textarea" id="story" name="story" rows="4" placeholder="Share a little about this item and why you're passing it on…"></textarea>
+          </div>
+        </section>
+
+        <section class="coin-suggestion">
+          <span class="coin-suggestion__icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#1f7a3f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-14 14z"/><path d="M5 19l7-7"/></svg>
+          </span>
+          <div class="coin-suggestion__body">
+            <p class="coin-suggestion__label">SMART COIN SUGGESTION</p>
+            <p class="coin-suggestion__value"><span id="coin-amount">20</span> ReUse Coins</p>
+            <p class="coin-suggestion__note">Suggested from your category and condition. Demo estimate only.</p>
+          </div>
+        </section>
+
+        <div class="form-actions">
+          <button class="btn btn--ghost" type="button" id="cancel-btn">Cancel</button>
+          <button class="btn btn--solid" type="submit">Submit donation · Earn <span id="earn-amount">20</span> Coins</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script type="module" src="dist/donate.js"></script>
+</body>
+</html>

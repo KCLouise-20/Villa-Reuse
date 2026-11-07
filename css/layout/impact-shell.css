@@ -1,0 +1,50 @@
+.eyebrow--sm { font-size: 8px; letter-spacing: 0.16em; }
+
+.impact-shell { max-width: 1100px; padding-top: 40px; }
+
+.impact-title {
+  margin-top: 8px;
+  font-family: var(--font-serif);
+  font-size: 46px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.impact-subtitle { margin-top: 14px; font-size: 14px; color: var(--c-muted); }
+
+.impact-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  margin-top: 26px;
+  align-items: start;
+}
+
+.card {
+  padding: 22px 24px 24px;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+}
+
+.card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.card__title {
+  margin-top: 6px;
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 1000px) {
+  .impact-columns { grid-template-columns: 1fr; }
+  .impact-title { font-size: 34px; }
+  .impact-shell { padding-top: 24px; }
+}

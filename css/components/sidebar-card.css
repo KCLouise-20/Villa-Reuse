@@ -1,0 +1,15 @@
+.sidebar-card {
+  padding: 16px;
+  background: var(--c-cream);
+  border-radius: var(--radius-md);
+}
+
+.sidebar-card__title {
+  margin: 12px 0 10px;
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.sidebar-card__text { font-size: 10px; line-height: 1.4; color: var(--c-muted); }
